@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane prefHeight="394.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml" fx:controller="Controller.con_addbook">
+   <children>
+       <HBox alignment="CENTER" minHeight="50" styleClass="green-theme" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+          <children>
+              <Label styleClass="font-title,green-theme,font-white" text="新增书籍信息" />
+          </children>
+       </HBox>
+       <VBox minHeight="400" spacing="20" styleClass="default-theme" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="55">
+          <children>
+              <TextField fx:id="bookName" promptText="书名" />
+              <TextField fx:id="bookAuthor" promptText="作者" />
+               <TextField fx:id="bookType" prefWidth="290" promptText="类别" />
+               <TextField fx:id="bookReserve" prefWidth="290" promptText="库存" />
+              <TextField fx:id="bookLocation" promptText="位置" />
+          </children>
+           <padding>
+               <Insets bottom="10" left="50" right="50" top="10" />
+           </padding>
+       </VBox>
+       <Button fx:id="add" onAction="#add_Book" styleClass="green-theme,btn-radius" text="确认" AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="180" AnchorPane.rightAnchor="180" />
+   </children>
+</AnchorPane>

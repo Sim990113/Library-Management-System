@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.con_login">
+   <children>
+      <HBox layoutX="305.0" layoutY="285.0" prefHeight="30.0" prefWidth="291.0" style="-fx-border-color: #BEBFC1; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+         <children>
+            <FontAwesomeIcon glyphName="USER" size="2em">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+            <TextField fx:id="FaccountField" focusTraversable="false" prefHeight="30.0" prefWidth="247.0" promptText="学号" style="-fx-background-color: transparent;" />
+         </children>
+      </HBox>
+      <HBox layoutX="305.0" layoutY="360.0" prefHeight="30.0" prefWidth="291.0" style="-fx-border-color: #BEBFC1; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+         <children>
+            <FontAwesomeIcon glyphName="INDENT" size="2em">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+            <TextField fx:id="FIDField" focusTraversable="false" prefHeight="30.0" prefWidth="247.0" promptText="身份证后六位" style="-fx-background-color: transparent;" />
+         </children>
+      </HBox>
+      <Button fx:id="fok" layoutX="305.0" layoutY="433.0" onMouseClicked="#FOK" styleClass="login-btn" text="确定" />
+      <Label layoutX="316.0" layoutY="98.0" styleClass="login-title" text="     忘记密码">
+         <effect>
+            <Reflection bottomOpacity="0.2" fraction="0.5" topOffset="-5.0" />
+         </effect>
+         <font>
+            <Font name="Times New Roman Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="199.0" layoutY="177.0" prefHeight="20.0" prefWidth="504.0" text="                             请输入你的学号和身份证后六位">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="221.0" prefHeight="20.0" prefWidth="588.0" text="                      输入正确的信息之后，你的密码将重置为你的身份证后六位 ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

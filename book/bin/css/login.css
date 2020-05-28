@@ -1,0 +1,41 @@
+
+.login-btn {
+    -fx-background-color: rgb(0, 150, 136);
+    -fx-text-fill: #fff;
+    -fx-pref-width: 300;
+    -fx-pref-height: 25;
+}
+
+/*所有按钮基本样式，无需引用就可以生效*/
+.button {
+    /*文本对齐方式*/
+    -fx-text-alignment: center;
+    /*合适高度*/
+    -fx-pref-height: 38px;
+    /*内边距*/
+    -fx-padding: 0 18px;
+    /*无边框*/
+    -fx-border-style: none;
+    /*鼠标样式*/
+    -fx-cursor: pointer;
+    /*边框圆角*/
+    -fx-border-radius: 2px;
+    -fx-background-radius: 2px;
+    -fx-cursor:hand;
+}
+
+
+/*鼠标覆盖按钮效果*/
+.button:hover {
+    /*粗体*/
+    -fx-font-weight: bold;
+    /*透明度*/
+    -fx-opacity: 0.8;
+}
+
+
+/*边框圆角按钮*/
+.btn-radius {
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+}

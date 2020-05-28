@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="APane" styleClass="box" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.con_personal">
+   <children>
+   <ImageView fx:id="pimage" fitHeight="1080" fitWidth="1370" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="0">
+       <image>
+       	<Image url="image/personal.jpg" />
+       </image>
+    </ImageView>
+      
+             <VBox layoutX="550.0" layoutY="100.0" spacing="20">
+                <children>
+                  <HBox prefHeight="44.0" prefWidth="202.0">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+       					<Image url="image/security.png" />
+      					</image>
+      					</ImageView>
+                        <Label styleClass="login-title" text="用户安全中心">
+                		</Label>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                          <Label styleClass="font-title" text="工号：" />
+                        <Label fx:id="Usid" styleClass="font-title" text="工号" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label styleClass="font-title" text="姓名：" />
+                        <Label fx:id="Uname" styleClass="font-title" text="姓名" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label styleClass="font-title" text="身份证：" />
+                        <Label fx:id="Uid" styleClass="font-title" text="身份证" />
+                     </children>
+                  </HBox>
+                    <TextField fx:id="Upassword" editable="false" styleClass="gray-theme" text="密码" />
+                    <HBox spacing="30">
+                       <children>
+                           <Button onAction="#edit" styleClass="green-theme" text="修改密码" />
+                           <Button onAction="#save" styleClass="blue-theme" text="保存" />
+                       </children>
+                    </HBox>
+                </children>
+             </VBox>
+   </children>
+</AnchorPane>
