@@ -1,9 +1,10 @@
 # Library-Manage-System
-A simple Library Manage System 
+A simple Library Manage System .
 
 
 It based on JavaFX and MYSQL.
 
+It includes front-end and back_end for readers and managers to use.
 
 It could update in LAN.
 
